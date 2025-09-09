@@ -1,27 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emergency Service</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="shortcut icon"
-      href="./assets/favicon-16x16.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-</html>
+< lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergency Service</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@5"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="shortcut icon"
+    href="./assets/favicon-16x16.png"
+    type="image/x-icon"
+  />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="hind-madurai">
+  <header class="my-2 md:my-10">
+    <nav class="flex justify-between items-center px-3 md:px-10">
+      <div class="flex gap-2 items-center">
+        <img class="w-12 md:w-14" src="./assets/logo.png" alt="" />
+        <p class="font-bold md:text-xl text-green-800 hidden sm:block">
+          Emergency <br />Service
+        </p>
+      </div>
+      <div class="space-x-1 md:space-x-2 text-xs md:text-sm font-bold flex">
+        <button
+          class="bg-green-50 flex justify-center items-center gap-2 px-3 py-1 rounded-2xl"
+        >
+          <span id="total-heart">0</span>
+          <img class="w-5 md:w-6" src="./assets/heart.png" alt="" />
+        </button>
+        <button
+          class="bg-green-50 flex justify-center items-center gap-2 px-3 py-1 rounded-2xl"
+        >
+          <span id="total-coin">100</span>
+          <img class="w-5 md:w-6" src="./assets/coin.png" alt="" />
+        </button>
+        <button class="bg-green-600 px-3 md:px-4 py-1 rounded-2xl text-white">
+          <p><span id="total-copy" class="mx-1">0</span>Copy</p>
+        </button>
+      </div>
+    </nav>
+    <section
+      class="bg-gradient-to-r from-green-900 via-green-800 to-green-900 space-y-2 mt-4"
+    >
+      <img
+        class="w-12 md:w-14 mx-auto pt-3"
+        src="./assets/logo-dark.png"
+        alt=""
+      />
+      <div class="text-white text-center py-4 space-y-2 px-3">
+        <p class="font-bold text-lg md:text-3xl">Emergency Service Directory</p>
+        <p class="text-sm md:text-base font-semibold">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </section>
+  </header>
+</body>
