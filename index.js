@@ -1,13 +1,13 @@
 const cardContainer = document.getElementById("card-container");
 cardContainer.addEventListener("click", function (e) {
-  //  Heart functionality
+  //  Heart function
   const heartBtn = e.target.className.includes("fa-heart");
   if (heartBtn) {
     const totalHeart = document.getElementById("total-heart").innerText;
     const updatedHeart = Number(totalHeart) + 1;
     document.getElementById("total-heart").innerText = updatedHeart;
   }
-  //  Call button functionality
+  //  Call button function
   const callBtn = e.target.closest(".call-btn");
   if (callBtn) {
     const serviceName =
@@ -50,7 +50,7 @@ cardContainer.addEventListener("click", function (e) {
     });
   }
 
-  //  Copy button functionality
+  //  Copy button function
   const copyBtn = e.target.closest(".copy-btn");
   if (copyBtn) {
     const copyServiceName =
